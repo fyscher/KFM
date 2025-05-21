@@ -1,12 +1,5 @@
-# React + Vite
+Your one-stop-shop for owning a scale copy of your Upland Assets distributed by Kingfyscher Manufacturing!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Simply connect your account, verify your purchase, and have a model shipped to a location of your choice.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Notice: No shipping or personal data is stored on our site. You must enter all shipping info with every confirmation of purchase through Upland.me or kingfyscher.ca
