@@ -1,7 +1,9 @@
 import { useState } from 'react'
-import Fetch_otp from '../components/fetch_otp'
 import './App.css'
+import Home from '../components/home'
+import Nav from '../components/Nav'
 import axios from 'axios'
+import Fetch_otp from '../components/fetch_otp'
 
 const App = () =>
 {
@@ -15,30 +17,26 @@ const App = () =>
 
     const DevshopID = import.meta.env.VITE_DEVSHOPID;
     const KFM_Password = import.meta.env.VITE_KFM_PASSWORD;
-
     const encoded = btoa(`${DevshopID}:${KFM_Password}`)
-    
-    console.log('unencoded: ', `${DevshopID}:${KFM_Password}`)
-    console.log('encoded: ', encoded)
-    console.log('Base URL: ', `${base_url}auth/otp/init`)
-
     const auth = 
     {
       'Accept': 'application/json',
       'Authorization': `Basic ${encoded}`
     }
-
     const code = await axios.post(`${base_url}/auth/otp/init`, {}, { headers: auth })
+    
     setOTP(code.data)
   }
 
   return (
-    <div>
+    <>
+      <Nav/>
+      <Home/>
       <Fetch_otp
         getOTPCode={getOTPCode}
         OTP={OTP}
-      />
-    </div>
+      />      
+    </>
   )
 }
 

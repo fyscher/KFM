@@ -4,10 +4,10 @@ const Fetch_otp = ({
 }) =>
 {
     return ( 
-        <>
+        <div className="OTP">
             <div>{OTP.code} expires at: {OTP.expireAt}</div>
             <button type="button" onClick={getOTPCode}>Get Code</button>
-        </>
+        </div>
     )
 }
 
