@@ -1,9 +1,8 @@
 import { useState } from 'react'
-import './App.css'
-import Home from '../components/home'
+import '../static/css/App.css'
+import Home from '../components/Home'
 import Nav from '../components/Nav'
 import axios from 'axios'
-import Fetch_otp from '../components/fetch_otp'
 
 const App = () =>
 {
@@ -29,14 +28,13 @@ const App = () =>
   }
 
   return (
-    <>
+    <div className='App'>
       <Nav/>
-      <Home/>
-      <Fetch_otp
+      <Home
         getOTPCode={getOTPCode}
         OTP={OTP}
-      />      
-    </>
+      />
+    </div>
   )
 }
 

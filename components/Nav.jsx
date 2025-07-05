@@ -1,3 +1,5 @@
+import '../static/css/Nav.css'
+
 const Nav = () =>
 {
     return (

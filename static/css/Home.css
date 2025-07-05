@@ -1,0 +1,93 @@
+/* Hero Information */
+div.hero-image
+{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../static/images/hero.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	border-radius: 8px;
+	position: relative;
+
+	display: flex;
+	flex-flow: column;
+	text-align: center;
+}
+
+div.hero-text
+{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	padding: 1rem;
+}
+
+p.oooLaLa
+{
+	color: transparent;
+	text-align: center;
+}
+
+p.oooLaLa:hover
+{
+	color: white;
+}
+
+div.card p
+{
+	margin: 0.5rem;
+}
+
+div.OTP
+{
+	background-color: lightsteelblue;
+	border-radius: 0.5rem;
+	box-shadow: 2px 1px 35px 1px var(--c30), 
+	2px 1px 25px 1px var(--c30);
+	padding: 1rem;
+}
+
+h1.headline
+{
+	color: white;
+	font-size: 2.5rem;
+	white-space: nowrap;
+}
+
+p.intro
+{
+	color: white;
+	font-size: large;
+}
+
+p.welcome
+{
+	color: white;
+	font-size: larger;
+}
+
+div p
+{
+	font-size: medium;
+}
+
+/* cards */
+div.cards
+{
+	display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+div.card
+{
+	background-color: lightsteelblue;
+    border-radius: 0.5rem;
+    text-align: center;
+    max-width: 25rem;
+    box-shadow: 2px 1px 35px 1px var(--c30), 
+                2px 1px 25px 1px var(--c30);
+    margin: 1.5rem;
+    padding: 0.5rem;
+}

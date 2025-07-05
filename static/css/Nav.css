@@ -1,0 +1,41 @@
+nav {
+	width: 100%;
+	height: 3rem;
+
+	background-color: var(--c30);
+
+	box-shadow: var(--c30) 0 0 10px, var(--c30) 0 1px 20px;
+}
+
+nav img {
+	float: left;
+	height: 3rem;
+}
+
+nav a.image {
+	margin: 0;
+	padding: 0;
+}
+
+nav a {
+	color: var(--c60);
+	transition: 0.1s;
+
+	float: left;
+	text-decoration: none;
+
+	padding: 0.5rem 1rem 0.5rem 1rem;
+
+	transition: 0.2s;
+}
+
+nav a.current {
+	text-decoration: underline;
+}
+
+nav a:hover {
+	color: var(--c30);
+	background-color: var(--c10);
+
+	box-shadow: var(--c10) 0 0 10px;
+}
