@@ -4,11 +4,13 @@ const Fetch_otp = ({
 }) =>
 {
     const time = new Date(OTP.expireAt).toLocaleString()
-    const label = OTP.code? `Expiration: ${time}`: ''
+    const code = OTP.code? `Code: ${OTP.code}`: ''
+    const expiry = OTP.expireAt? `Expiration: ${time}`: ''
+
     return ( 
         <div className="OTP">
-            <div>Code: {OTP.code}</div>
-            <div>{label}</div>
+            <div>{code}</div>
+            <div>{expiry}</div>
             <button type="button" onClick={getOTPCode}>New Code</button> 
         </div>
     )
