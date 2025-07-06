@@ -5,8 +5,12 @@ const Nav = () =>
 {
     return (
         <nav>
-            <Link className='image' to='/'><img src='./static/images/logo.jpg' /></Link>
-            <Link className='login' to='/login'>Login</Link>
+            <div>
+                <Link className='image' to='/'><img src='./static/images/logo.jpg' /></Link>
+            </div>
+            <div>
+                <Link className='login' to='/login'>Login</Link>
+            </div>
         </nav>
     )
 }
