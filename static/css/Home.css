@@ -44,7 +44,12 @@ div.OTP
 	border-radius: 0.5rem;
 	box-shadow: 2px 1px 35px 1px var(--c30), 
 	2px 1px 25px 1px var(--c30);
-	padding: 1rem;
+	padding: 0.25rem;
+}
+
+.connectionButton
+{
+	margin-top: 0.75rem;
 }
 
 h1.headline
