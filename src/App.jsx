@@ -3,6 +3,7 @@ import '../static/css/App.css'
 import { Routes, Route } from 'react-router-dom'
 import Home from '../components/Home'
 import Nav from '../components/Nav'
+import Login from '../components/Login'
 import axios from 'axios'
 
 const App = () =>
@@ -33,7 +34,7 @@ const App = () =>
         <Nav/>
         <Routes>
           <Route path='/' element={<Home getOTPCode={getOTPCode} OTP={OTP} />}/>
-          <Route path='/login' element={<Home getOTPCode={getOTPCode} OTP={OTP} />}/>
+          <Route path='/login' element={<Login />}/>
         </Routes>
       </div>
   )

@@ -33,6 +33,12 @@ p.oooLaLa:hover
 	color: white;
 }
 
+div.hidden
+{
+	display: flex;
+	justify-content: center;
+}
+
 div.card p
 {
 	margin: 0.5rem;

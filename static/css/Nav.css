@@ -5,6 +5,8 @@ nav {
 	background-color: var(--c30);
 
 	box-shadow: var(--c30) 0 0 10px, var(--c30) 0 1px 20px;
+	display: flex;
+	justify-content: space-between;
 }
 
 nav img {

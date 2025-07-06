@@ -7,7 +7,9 @@ const Home = ({ getOTPCode, OTP }) =>
     return (
         <div>
             <div className='hero-image'>
-                <p className='oooLaLa'>Come find me! | __fysch | Fyschmeister |</p>
+                <div className='hidden'>
+                    <p className='oooLaLa'>Come find me! | __fysch | Fyschmeister |</p>
+                </div>
                 <div className='hero-text'>
                     <h1 className='headline'>Kingfyscher Manufacturing</h1>
                     <p className='welcome'>Welcomes you</p>
