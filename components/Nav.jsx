@@ -1,11 +1,12 @@
 import '../static/css/Nav.css'
+import { Link } from 'react-router-dom';
 
 const Nav = () =>
 {
     return (
         <nav>
-            <a className='image' href='/'><img src='./static/images/logo.jpg' /></a>
-            <a className='login' href='/login'>Login</a>
+            <Link className='image' to='/'><img src='./static/images/logo.jpg' /></Link>
+            <Link className='login' to='/login'>Login</Link>
         </nav>
     )
 }

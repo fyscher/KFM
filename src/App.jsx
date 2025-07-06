@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import '../static/css/App.css'
+import { Routes, Route } from 'react-router-dom'
 import Home from '../components/Home'
 import Nav from '../components/Nav'
 import axios from 'axios'
@@ -28,13 +29,13 @@ const App = () =>
   }
 
   return (
-    <div className='App'>
-      <Nav/>
-      <Home
-        getOTPCode={getOTPCode}
-        OTP={OTP}
-      />
-    </div>
+      <div>
+        <Nav/>
+        <Routes>
+          <Route path='/' element={<Home getOTPCode={getOTPCode} OTP={OTP} />}/>
+          <Route path='/login' element={<Home getOTPCode={getOTPCode} OTP={OTP} />}/>
+        </Routes>
+      </div>
   )
 }
 
