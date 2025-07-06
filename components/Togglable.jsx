@@ -14,11 +14,11 @@ const Togglable = (props) =>
   return (
     <div>
       <div style={hideWhenVisible}>
-        <button onClick={toggleVisibility}>{props.buttonLabel}</button>
+        <button onClick={toggleVisibility}>{props.enableLabel}</button>
       </div>
       <div style={showWhenVisible}>
         {props.children}
-        <button className='connectionButton' onClick={toggleVisibility}>Close</button>
+        <button className='connectionButton' onClick={toggleVisibility}>{props.disableLabel}</button>
       </div>
     </div>
   )
@@ -26,7 +26,8 @@ const Togglable = (props) =>
 
 Togglable.propTypes =
 {
-  buttonLabel: PropTypes.string.isRequired
+  enableLabel: PropTypes.string.isRequired,
+  disableLabel: PropTypes.string.isRequired
 }
 
 Togglable.displayName = 'Togglable'

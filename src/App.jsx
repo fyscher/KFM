@@ -5,10 +5,12 @@ import Home from '../components/Home'
 import Nav from '../components/Nav'
 import Login from '../components/Login'
 import axios from 'axios'
+import loginService from './services/login'
 
 const App = () =>
 {
   const [OTP, setOTP] = useState({});
+  const [user, setUser] = useState(null)
 
   const base_url = "https://api.sandbox.upland.me/developers-api"
   
@@ -29,12 +31,30 @@ const App = () =>
     setOTP(code.data)
   }
 
+  const login = async userCreds =>
+  {
+    try
+    {
+      const user = await loginService.login(userCreds)
+
+      window.localStorage.setItem(
+        'loggedBlogUser', JSON.stringify(user)
+      )
+      setUser(user)
+    }
+    catch (exception)
+    {
+      console.log(exception)
+      // notify('error', 'Wrong Credentials')
+    }
+  }
+
   return (
       <div>
         <Nav/>
         <Routes>
           <Route path='/' element={<Home getOTPCode={getOTPCode} OTP={OTP} />}/>
-          <Route path='/login' element={<Login />}/>
+          <Route path='/login' element={<Login userCreds={login} />}/>
         </Routes>
       </div>
   )

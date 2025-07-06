@@ -12,9 +12,9 @@ const Home = ({ getOTPCode, OTP }) =>
                 </div>
                 <div className='hero-text'>
                     <h1 className='headline'>Kingfyscher Manufacturing</h1>
-                    <p className='welcome'>Welcomes you</p>
+                    <p className='subHeadline'>Welcomes you</p>
                     <p className='intro'>Premium Digital Assets found within</p>
-                    <Togglable buttonLabel="Get Connection Code" >
+                    <Togglable enableLabel="Get Connection Code" disableLabel="Close">
                         <Fetch_otp
                             getOTPCode={getOTPCode}
                             OTP={OTP}
